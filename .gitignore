@@ -1,0 +1,16 @@
+# Vendor
+/node_modules
+/vendor
+
+# Private
+.env
+*.sql
+
+# Temporary / Cache
+.phpunit.result.cache
+.php_cs.cache
+.stylelintcache
+
+# Development
+/.vscode
+yarn-error.log

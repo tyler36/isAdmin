@@ -1,0 +1,43 @@
+{
+    "name": "tyler36/isadmin",
+    "description": "A simple way to define an administator, with a auth.admin middleware",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tyler36"
+        }
+    ],
+    "homepage": "https://github.com/tyler36/isadmin",
+    "keywords": ["Laravel", "isAdmin"],
+    "require": {
+        "illuminate/support": "~5|~6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3|~4",
+        "sempro/phpunit-pretty-print": "^1.0",
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "squizlabs/php_codesniffer": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "tyler36\\isAdmin\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tyler36\\isAdmin\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "tyler36\\isAdmin\\isAdminServiceProvider"
+            ],
+            "aliases": {
+                "isAdmin": "tyler36\\isAdmin\\Facades\\isAdmin"
+            }
+        }
+    }
+}
